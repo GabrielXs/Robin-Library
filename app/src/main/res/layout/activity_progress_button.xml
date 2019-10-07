@@ -1,18 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".Progress_button">
+        android:layout_height="match_parent">
 
-        <Component.RobinProgressButton.LoadingButton
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Teste"
-            android:textColor="#fff"
-                />
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="16dp"
+            android:paddingTop="40dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Botão padrao de carregamento" />
+
+        <Component.CircularProgressButton.customViews.RobinCircularProgressButton
+                android:id="@+id/imgbtnTest0"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="10dp"
+                android:text="Test 0"
+                app:finalCornerAngle="50dp"
+                app:initialCornerAngle="0dp"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="0dp"
+                app:spinning_bar_width="3dp" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Com progresso" />
+
+        <Component.CircularProgressButton.customViews.RobinCircularProgressButton
+                android:id="@+id/imgbtnTest1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_default"
+                android:text="Send"
+                android:textColor="@android:color/white"
+                app:finalCornerAngle="50dp"
+                app:initialCornerAngle="0dp"
+                app:spinning_bar_color="#FFFFFFFF"
+                app:spinning_bar_padding="5dp"
+                app:spinning_bar_width="5dp"/>
 
 
-</LinearLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Inicia a animação então para" />
+
+        <Component.CircularProgressButton.customViews.RobinCircularProgressButton
+                android:id="@+id/imgbtnTest2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_default"
+                android:text="Send"
+                android:textColor="@android:color/white"
+                app:finalCornerAngle="50dp"
+                app:initialCornerAngle="0dp"
+                app:spinning_bar_color="#FFFFFFFF"
+                app:spinning_bar_padding="5dp"
+                app:spinning_bar_width="5dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Iniciar a animação com listener, Revert com listener" />
+
+        <Component.CircularProgressButton.customViews.RobinCircularProgressButton
+                android:id="@+id/imgbtnTeste3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_default"
+                android:text="Send"
+                android:textColor="@android:color/white"
+                app:finalCornerAngle="50dp"
+                app:initialCornerAngle="0dp"
+                app:spinning_bar_color="#FFFFFFFF"
+                app:spinning_bar_padding="5dp"
+                app:spinning_bar_width="5dp" />
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Iniciar a animação com listener, Revert com listener" />
+
+        <Component.CircularProgressButton.customViews.RobinCircularProgressButton
+                android:id="@+id/imgbtnTeste4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_default"
+                android:text="Send"
+                android:textColor="@android:color/white"
+                app:finalCornerAngle="50dp"
+                app:initialCornerAngle="0dp"
+                app:spinning_bar_color="#FFFFFFFF"
+                app:spinning_bar_padding="5dp"
+                app:spinning_bar_width="5dp" />
+
+    </LinearLayout>
+</ScrollView>
