@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RobinLibrary</string>
+    <string name="not_connected">Não é possível estabelecer conexão com o Servidor.\nTente novamente.</string>
 </resources>
