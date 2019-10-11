@@ -63,11 +63,11 @@ class HttpHelper<T>(val context: Context) {
             writeTimeout(seconds,TimeUnit.SECONDS)
         }
         var request:Request?= null
-        if(json != null){
-            val body = RequestBody.create(MediaType.parse("application/json; charset=utf-8"),json)
-            request = Request.Builder().url(url).post(body).build()
+        request = if(json != null){
+            val body =  RequestBody.create(MediaType.parse("application/json; charset=utf-8"),json)
+            Request.Builder().url(url).post(body).build()
         }else{
-            request = Request.Builder().url(url).build()
+            Request.Builder().url(url).build()
         }
 
         val response = client.build().newCall(request).execute()
